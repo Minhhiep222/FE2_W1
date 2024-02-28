@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .route{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .station {
+            width: 100%;
+            height: 200px;
+            position: relative;
+        }
+
+        .line{
+            margin-top: 15px;
+            align-items: center;
+            width: 110%;
+            height: 40px;
+            background-color: rgb(44, 167, 13);
+            border-radius: 25px 0 0 25px ;
+        }
+
+        .line:hover, .line.cuoi:hover, .dot:hover,  .dot_finish:hover{
+            background-color: red;
+            animation: fadeIn linear 3s;
+        }
+
+        .line.cuoi{
+            margin-top: 15px;
+            align-items: center;
+            width: 90%;
+            height: 40px;
+            background-color: rgb(44, 167, 13);
+            border-radius: 25px 0 0 25px ;
+          
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            } 
+            to {
+                opacity: 1;
+            }
+        }
+        
+
+
+        .dot{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 10px solid  rgb(44, 167, 13);
+            border-radius: 50%;
+        }
+
+        .dot_finish {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 10px solid  rgb(44, 167, 13);
+            border-radius: 50%;
+        }
+
+        .name{
+            position: absolute;
+            bottom: 0;
+            height: 100px;
+            color: blueviolet;
+            transform: rotate(40deg);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .name_finish{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            color: blueviolet;
+            transform: rotate(40deg);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="route">
+        <div class="station">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="name">Bến thành</div>
+        </div>
+        <div class="station">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="name">Bến thành</div>
+        </div>
+        <div class="station">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="name">Bến thành</div>
+        </div>
+        <div class="station">
+            <div class="line cuoi"></div>
+            <div class="dot"></div>
+            <div class="name">Bến thành</div>
+            <div class="dot_finish"></div>
+            <div class="name_finish">Bến thành</div>
+        </div>
+    </div>
+</body>
+</html>

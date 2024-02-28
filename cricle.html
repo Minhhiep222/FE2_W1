@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .dot {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border: 10px solid  rgb(44, 167, 13);
+            border-radius: 50%;
+            animation: moveCircle linear 10s;
+            
+        }
+
+     
+
+        @keyframes moveCircle {
+            0% {
+                left: 0;
+            }
+
+            25% {
+                left: calc(100% - 100px);
+                top: 0;
+            }
+            50% {
+                top: calc(100% - 100px);
+                right: 0;
+            }
+
+            75% {
+                right: calc(100% - 100px);
+                top: calc(100% - 100px);
+            }
+
+            100% {
+               bottom: calc(100% - 100px);
+               top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contai">
+        <div class="dot"></div>
+
+    </div>
+    
+</body>
+</html>
