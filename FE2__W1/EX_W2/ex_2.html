@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 600px;
+            position: relative;
+            
+        }
+        .body_container{
+            margin: auto;
+            background-color: rgb(63, 63, 148);
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0%);
+                opacity: 1;
+            }
+            to {
+                transform: scale(100%);
+                opacity: 0;
+            }
+        }
+
+        .dot{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(19, 14, 14);
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .dot{
+            animation: scaleUp linear 5s infinite ;
+        }
+
+        .dot::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(17, 14, 14);
+            animation: scaleUp linear 4s infinite ;
+            animation-delay: 2s;
+        }
+        .buy__link {
+            
+            position: relative;
+            content: "";
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgb(245, 245, 245);
+            position: fixed;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="body_container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus beatae rem, ullam assumenda non, ut odio, quasi repudiandae autem iste eius cumque quod! Iusto quisquam voluptate suscipit cum neque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet quia, inventore nostrum adipisci repellendus deleniti eius praesentium suscipit unde voluptate veritatis rerum atque soluta. Earum veritatis perspiciatis et dolores?</p>
+            <div class="dot"></div>
+            <a class="buy__link">BUY</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aspernatur vero, libero architecto illum doloremque aliquid quod quas provident optio accusamus. Asperiores dolorem ducimus maiores, id quibusdam numquam nobis in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet quia, inventore nostrum adipisci repellendus deleniti eius praesentium suscipit unde voluptate veritatis rerum atque soluta. Earum veritatis perspiciatis et dolores?</p>
+        </div>
+    </div>
+</body>
+</html>
