@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+        } 
+
+        .box {
+            position: absolute;
+            top: calc(50% - 150px);
+            right: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 2px;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        }
+        .box:hover {
+            background-position: 0 -120px;
+        }
+
+        .box__item {
+            width: 60px;
+            height: 60px; 
+            background: url(sidemenu-icons.png) no-repeat;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        .box__item:nth-child(1) {
+            background-position: 0 0px;
+        }
+
+        .box__item:nth-child(2) {
+            background-position: 0 -120px;
+        }
+
+        .box__item:nth-child(3) {
+            background-position: 0 -240px;
+        }
+
+        .box__item:nth-child(4) {
+            background-position: 0 -360px;
+        }
+
+        .box__item:nth-child(5) {
+            background-position: 0 -480px;
+        }
+
+        .box__item:nth-child(1):hover {
+            background-position: 0 -60px;
+        }
+
+        .box__item:nth-child(2):hover {
+            background-position: 0 -180px;
+        }
+
+        .box__item:nth-child(3):hover {
+            background-position: 0 -300px;
+        }
+
+        .box__item:nth-child(4):hover {
+            background-position: 0 -420px;
+        }
+
+        .box__item:nth-child(5):hover {
+            background-position: 0 -540px;
+        }
+        
+        .box__item--fade {
+            width: 100px;
+            height: 60px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            transform: translateX(0px);
+            transition: transform linear 0.2s;
+            z-index: -1;
+            border-radius: 2px;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .box__item:hover .box__item--fade{
+            transform: translateX(-100px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box__item">
+            <div class="box__item--fade">Showcase</div>
+        </div>
+        <div class="box__item">
+            <div class="box__item--fade">Blog</div>
+        </div>
+        <div class="box__item">
+            <div class="box__item--fade">Questions</div>
+        </div>
+        <div class="box__item">
+            <div class="box__item--fade">Help</div>
+        </div>
+        <div class="box__item">
+            <div class="box__item--fade">Contact</div>
+        </div>
+    </div>
+</body>
+</html>
