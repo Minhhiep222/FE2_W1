@@ -1,0 +1,37 @@
+@keyframes wave {
+    0% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
+
+  
+@keyframes checkTran {
+    0% {
+        border: 2px solid rgb(240, 244, 242);
+        transform: translateX(0px);
+    }
+    80% {
+        border: 2px solid rgb(240, 244, 242);
+        transform: translateX(25px);
+    }
+    100% {
+        border: 2px solid rgb(19, 134, 71);
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes headingTran {
+    0% {
+        transform: translateX(200px);
+    }
+    80% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+    }
+
+    .container {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 100px;
+      right: 100px;
+      transition: width 1s, height 1s;
+      border-radius: 0px 0px 0px 0px;
+    }
+
+    .side_shape_front:hover {
+      width: 230px;
+      height: 370px;
+      animation: dipFront ease 0.4s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes dipFront {
+      0% {
+        width: 0px;
+        height: 300px;
+      }
+
+      75% {
+        width: 0px;
+        height: 300px;
+      }
+
+      100% {
+        width: 230px;
+        height: 370px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- <svg class="side_shape_front" viewBox="0 0 130 200" preserveAspectRatio="none">
+      <path class="side_shape_front_2" d="M130,200V0c0,31.9-87.8,45.3-87.8,100C42.2,151.7,130,172,130,200z"></path>
+    </svg> -->
+  </div>
+</body>
+</html>
