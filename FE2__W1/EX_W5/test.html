@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .dad{
+            margin-left: 50vh;
+            margin-top: 30vh;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+            perspective: 600px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .box::after {
+            content: "";
+            background-color: aqua;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            z-index: 2;
+            top: 0; 
+            left: 0;
+        }
+
+        .box::before {
+            content: "";
+            background-color: brown;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            z-index: 2;
+            top: 0; 
+            right: 0;
+        }
+
+        .box {
+            position: absolute;
+            inset: 0;
+            background-color: blueviolet;
+            z-index: 1;
+            transition: 1s; 
+        }
+
+        .box::after:hover ~ .box{
+            transform: rotateY(45deg)
+        }
+        .box::before:hover ~ .box{
+            transform: rotateY(-45deg)
+        }
+</style>
+<body>
+    <div class="dad">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

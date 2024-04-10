@@ -6,9 +6,13 @@ html, body {
 }
 
 .navbar__menu {
+<<<<<<< HEAD
     width: 100%;
     height: 100%;
     background-image: url(../img/7__up.jpg);
+=======
+    background-image: url(../img/lemon-campaign-bg.jpg);
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,6 +38,13 @@ html, body {
   right: 0;
 }
 
+<<<<<<< HEAD
+=======
+svg.side_shape_back {
+  transition: width linear 0.5s, height linear 0.5s !important;
+}
+
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
 .navbar__menu {
   position: absolute;
   top: 0;
@@ -183,12 +194,20 @@ html, body {
   width: 52px;
   height: 100%;
   position: fixed;
+<<<<<<< HEAD
   top: calc(50% - 300px);
+=======
+  top: calc(50% - 400px);
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
   right: 0;
 }
 
 .hover__item:hover {
   width: 300px;
+<<<<<<< HEAD
+=======
+  overflow: hidden;
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
 }
 
 .hover__item:hover .side_shape_back {

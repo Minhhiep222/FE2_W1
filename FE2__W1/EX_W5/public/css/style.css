@@ -1,4 +1,19 @@
 
+<<<<<<< HEAD
+=======
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu {
+    background-image: url(../img/lemon-campaign-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
 
 .side_shape_back {
   fill: rgb(19, 134, 71);
@@ -20,6 +35,13 @@
   right: 0;
 }
 
+<<<<<<< HEAD
+=======
+svg.side_shape_back {
+  transition: width linear 0.5s, height linear 0.5s !important;
+}
+
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
 .navbar__menu {
   position: absolute;
   top: 0;
@@ -165,6 +187,7 @@
 }
 
 .hover__item {
+<<<<<<< HEAD
   width: 50px;
   height: 450px;
   position: fixed;
@@ -172,6 +195,21 @@
   right: 0;
 }
 
+=======
+  overflow: hidden;
+  width: 52px;
+  height: 100%;
+  position: fixed;
+  top: calc(50% - 400px);
+  right: 0;
+}
+
+.hover__item:hover {
+  width: 300px;
+  overflow: hidden;
+}
+
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
 .hover__item:hover .side_shape_back {
   animation: dipBack ease 0.4s;
   animation-fill-mode: forwards;
@@ -185,6 +223,28 @@
   z-index: 0;
 }
 
+<<<<<<< HEAD
+=======
+.title {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 84px;
+  color: white;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+p {
+  font-weight: 200;
+  color: rgb(202, 202, 202);
+}
+>>>>>>> deeddc8617646b281df86c4777969137b8ea80e9
 @keyframes dipBack {
   0% {
     width: 150px;
