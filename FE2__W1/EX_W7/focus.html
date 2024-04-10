@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: none;
+        }
+
+        .item {
+            border: 1px solid #333;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .item:focus + p {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <button class="item">
+                text 1
+            </button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, suscipit sed facilis iure ducimus perspiciatis exercitationem vitae 
+                cum alias veritatis pariatur, labore eos soluta laboriosam hic nemo, velit non unde.</p>
+        </div>
+        
+        <div class="title">
+
+            <button class="item">
+                text 2
+            </button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, suscipit sed facilis iure ducimus perspiciatis exercitationem vitae 
+                cum alias veritatis pariatur, labore eos soluta laboriosam hic nemo, velit non unde.</p>
+        </div>
+        <div class="title">
+
+            <button class="item">
+                text 3
+            </button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, suscipit sed facilis iure ducimus perspiciatis exercitationem vitae 
+                cum alias veritatis pariatur, labore eos soluta laboriosam hic nemo, velit non unde.</p>
+        </div>
+    </div>
+</body>
+</html>

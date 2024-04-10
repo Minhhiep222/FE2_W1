@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 600px;
+        }
+        .body__link {
+            position: relative;
+            display: block;
+            width: 400px;
+            height: 400px;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        .front , .back , .top , .right , .left { 
+            position: absolute;
+            inset: 0;
+            transition: transform 1s;
+            display: flex;
+            transform-style: preserve-3d;
+        } 
+
+        .front {
+            background-color: brown;
+            transform: translateZ(200px);
+            /* position: relative; */
+        }
+
+        .front_left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 50%;
+            background-color: black;
+            transform: translateZ(200px);
+
+        }
+
+        .left {
+            background-color: red;
+            transform: rotateY(90deg) translateZ(-200px)
+        }
+        .right {
+            background-color: blue;
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        .back {
+            background-color: yellow;
+            transform: translateZ(-200px);
+        }
+        .container {
+            margin: auto;
+            perspective: 1200px;
+        }
+
+        /* .body__link:hover .right{
+            transform: rotateY(0deg);
+            transform: translateZ(200px)
+        } */
+
+        .body__link:hover{
+            transform: rotateY(-90deg);
+        }
+
+        .title {
+            margin: auto;
+            font-size: 5rem;
+            font-weight: 900;
+            color: black;
+        }
+
+        .title_front {
+            transform: translateZ(10px);
+        }
+        
+        .title_right {
+            transform: translateZ(10px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="" class="body__link">
+            <!-- <div class="box back"></div> -->
+            <div class="box front">
+                <h1 class="title title_front">FRONT</h1>
+            </div>
+            <div class="box right">
+                <h1 class="title title_right">RIGHT</h1>
+            </div>
+            <!-- <div class="box left"></div> -->
+            <!-- <div class="box top"></div>
+            <div class="box bottom"></div> -->
+        </a>
+        <div class="body__link_left"></div>
+        <div class="body__link_right"></div>
+    </div>
+</body>
+</html>
